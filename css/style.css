@@ -287,7 +287,7 @@ img.svg {
 }
 
 .arlo_tm_leftpart_wrap .menu_list_wrap ul li a:hover:before {
-	/* width: 35px; */
+	width: 35px;
 }
 
 .arlo_tm_leftpart_wrap .leftpart_bottom {
@@ -557,10 +557,10 @@ img.svg {
 	margin-bottom: 38px;
 }
 
-.arlo_tm_hero_header_wrap .image_wrap img {
-	/* border-radius: 100%; */
-	/* border: 8px solid rgba(255, 255, 255, .5); */
-}
+/* .arlo_tm_hero_header_wrap .image_wrap img {
+	border-radius: 100%;
+	border: 8px solid rgba(255, 255, 255, .5);
+} */
 
 .arlo_tm_hero_header_wrap .name_holder h3 {
 	font-family: "Montserrat";
