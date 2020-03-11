@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<meta name="description" content="Name of your web site">
+	<meta name="author" content="Marketify">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Tugas Ketiga - Algoritma Simple Parser (Yosep Ferdianto)</title>
+	<link rel="shortcut icon" href="img/logo/desktop-logo.png">
+
+	<!-- STYLES -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/aef5260423.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/plugins.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/prism.css" />
+	<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+	<!-- /STYLES -->
+
+</head>
+
+<body>
+
+	<!-- WRAPPER ALL -->
+	<div class="arlo_tm_wrapper_all">
+
+		<div id="arlo_tm_popup_blog">
+			<div class="container">
+				<div class="inner_popup scrollable"></div>
+			</div>
+			<span class="close"><a href="#"></a></span>
+		</div>
+
+		<!-- PRELOADER -->
+		<div class="arlo_tm_preloader">
+			<div class="spinner_wrap">
+				<div class="spinner"></div>
+			</div>
+		</div>
+		<!-- /PRELOADER -->
+
+		<!-- CONTENT -->
+		<div class="arlo_tm_content">
+
+			<!-- RIGHTPART -->
+			<div class="arlo_tm_portfolio_single_wrap">
+				<div class="container">
+					<div class="pagination_wrap" style="margin-bottom: 20px;">
+						<div class="prev">
+							<a href="index.html">
+								<h5><i class="fa fa-home"></i> Back to Home</h5>
+							</a>
+						</div>
+					</div>
+					<div class="title_holder">
+						<h3>Tugas Ketiga - Algoritma</h3>
+					</div>
+					<h3>Simple Parser</h3>
+					<p>Buatlah sebuah fungsi dengan nama <b>simple_parser</b> untuk me’replace kata di
+						dalam sebuah text (sebagai input pertama) dengan dengan kata lain (sebagai input kedua
+						denga tipe key value).</p>
+					<p>misal :</p>
+					<p><b>INPUT PERTAMA:</b> `Nama saya {nama}, usia {usia} tahun, saya berprofesi sebagai
+						{profesi}`</p>
+					<p><b>INPUT KEDUA:</b> { nama: ‘Tri Pamungkas’, usia: 30, profesi: ‘database developer’}
+					</p>
+					<p><b>OUTPUT:</b> `Nama saya Tri Pamungkas, usia 30 tahun, saya berprofesi sebagai
+						database developer`</p>
+					<hr>
+					<br>
+					<div class="details_wrap">
+						<div class="leftbox">
+							<div class="name_holder" style="margin-bottom: 30px;">
+								<h3>PENYELESAIAN</h3>
+							</div>
+							<div class="name_holder" style="margin-bottom: 30px">
+								<h5>INPUT</h5>
+							</div>
+							<div class="arlo_tm_contact_wrap">
+								<div class="main_input_wrap">
+									<form onsubmit="inputPertama(); return false" action="">
+										<div class="wrap">
+											<input id="nama" type="text" placeholder="Input nama..." />
+										</div><br>
+										<div class="wrap">
+											<input id="usia" type="text" placeholder="Input usia..." />
+										</div><br>
+										<div class="wrap">
+											<input id="profesi" type="text" placeholder="Input profesi..." />
+										</div><br>
+										<div class="arlo_tm_button" style="float: right">
+											<a type="submit" onclick="inputPertama()"><span>Proses</span></a>
+										</div>
+									</form>
+									<div class="name_holder" style="margin-top: 200px;">
+										<h4>OUTPUT</h4><br>
+										<div id="o_parse"></div>
+										<hr>
+										<div id="output"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="rightbox">
+							<div class="name_holder">
+								<h3>CODE</h3>
+							</div>
+							<p>
+								<h5>JavaScript <a href="tugas_ketiga/palindrome_0.js">Resource</a></h5>
+								<pre data-src="js/prism.js" class="language-javascript" data-src-loaded="js/prism.js">
+<code class="language-javascript">function simple_parse(nama, usia, profesi) {
+	var json = '{"nama": "' + nama + '", "usia": ' + usia + ', "profesi": "' + profesi + '"}';
+
+	// Converting ke JSON object to JS object
+	var obj = JSON.parse(json);
+
+	// Melihat data yang dihasilkan obj melalui console
+	console.log('Input Parse: ' + json);
+	console.log('Nama saya ' + obj.nama + ' usia ' + obj.usia + ' tahun, saya berprofesi sebagai' + obj.profesi);
+
+	return 'Nama saya ' + obj.nama + ' usia ' + obj.usia + ' tahun, saya berprofesi sebagai ' + obj.profesi;
+}
+// Menjalankan dengan inputan
+inputPertama("yosep", 23, "IT Programmer")
+
+//OUTPUT: 
+//Input Parse: {"nama": "yosep", "usia": 23, "profesi": "IT Programmer"}
+// Nama saya yosep usia 23 tahun, saya berprofesi sebagaiIT Programmer</code></pre>
+							</p>
+						</div>
+					</div>
+
+					<div class="pagination_wrap" style="margin-top: 100px; margin-bottom: 20px">
+						<div class="prev">
+							<a href="tugas_ketiga_2.html">
+								<h5><i class="fa fa-arrow-circle-o-left"></i> Words Counter</h5>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- CONTACT & FOOTER -->
+				<div class="arlo_tm_section" id="contact">
+					<div class="arlo_tm_footer_contact_wrapper_all">
+						<div class="arlo_tm_footer_wrap">
+							<div class="container">
+								<p>&copy; Copyright 2019. All Rights are Reserved.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /CONTACT & FOOTER -->
+
+			</div>
+			<!-- /RIGHTPART -->
+
+			<a class="arlo_tm_totop" href="#"></a>
+		</div>
+	</div>
+	<!-- / WRAPPER ALL -->
+
+	<!-- SCRIPTS -->
+	<script src="js/jquery.js"></script>
+	<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
+	<script src="js/plugins.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/prism.js"></script>
+	<!-- /SCRIPTS -->
+
+	<script type="text/javascript">
+		function inputPertama() {
+			var nama = document.getElementById("nama").value;
+			var usia = document.getElementById("usia").value;
+			var profesi = document.getElementById("profesi").value;
+			simple_parse(nama, usia, profesi);
+		}
+
+		function simple_parse(nama, usia, profesi) {
+			document.getElementById('nama').value = '';
+			document.getElementById('usia').value = '';
+			document.getElementById('profesi').value = '';
+
+			var json = '{"nama": "' + nama + '", "usia": ' + usia + ', "profesi": "' + profesi + '"}';
+
+			// Converting ke JSON object to JS object
+			var obj = JSON.parse(json);
+
+			console.log("Input Parse: " + json); // Melihat data yang dihasilkan obj melalui console
+			console.log('Nama saya ' + obj.nama + ' usia ' + obj.usia + ' tahun, saya berprofesi sebagai ' + obj.profesi); // Melihat data yang dihasilkan obj melalui console
+
+			document.getElementById("o_parse").innerHTML = '<h6><i>' + json + '</i></h6>';
+
+			document.getElementById("output").innerHTML = '<h5>Nama saya <u>' + obj.nama + '</u> usia <u>' + obj.usia + '</u> tahun, saya berprofesi sebagai <u>' + obj.profesi + '</u></h5>';
+
+			return obj;
+			return 'Nama saya ' + obj.nama + ' usia ' + obj.usia + ' tahun, saya berprofesi sebagai ' + obj.profesi;
+		}
+	</script>
+
+</body>
+
+</html>
