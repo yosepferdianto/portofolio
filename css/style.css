@@ -214,8 +214,9 @@ img.svg {
 }
 
 .arlo_tm_leftpart_wrap .logo_wrap img {
+	background-color: #000;
 	border-radius: 100%;
-	border: 8px solid #ff1a1a91;
+	border: 8px solid #ff1a1a71;
 }
 
 .arlo_tm_leftpart_wrap .menu_list_wrap {
@@ -338,6 +339,55 @@ img.svg {
 }
 
 .arlo_tm_leftpart_wrap .leftpart_bottom .social_wrap ul li a:hover {
+	color: #ff1a1a;
+}
+
+
+/* ------------------------------------------------------------------- */
+.social_wrap_contact {
+	width: 100%;
+	height: auto;
+	/* float: center; */
+	text-align: center;
+	/* position: relative; */
+	/* left: -5px; */
+	/* margin-bottom: 10px; */
+
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
+	box-sizing: border-box;
+	/* Opera/IE 8+ */
+}
+
+.social_wrap_contact ul {
+	margin: 0px;
+	list-style-type: none;
+}
+
+.social_wrap_contact ul li {
+	margin: 0px 20px 0px 0px;
+	display: inline-block;
+}
+
+.social_wrap_contact ul li:last-child {
+	margin-right: 0px;
+}
+
+.social_wrap_contact ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 40px;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.social_wrap_contact ul li a:hover {
 	color: #ff1a1a;
 }
 
@@ -2018,7 +2068,7 @@ img.svg {
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 98px;
+	/* padding-top: 98px; */
 	padding-bottom: 70px;
 	background-color: #221F1Fb9;
 	color: #fff;
