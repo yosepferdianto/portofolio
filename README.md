@@ -12,7 +12,7 @@
 <p>4. Jelaskan istilah - istilah berikut: REST API, SQL, HTTP, UI Framework (usahakan pergunakan wawasan & bahasa sendiri usahakan pergunakan wawasan & bahasa sendiri)
 <p>5. Apa yang dimaksud dengan RDBMS dan noSQL, jelaskan perbedaannya Soal dan jawaban disertakan di profile page Tugas Pertama
 (dibuat seperti blog post, cukup static saja).
-<h4>Check it : <a href="https://yosepferdianto.github.io/testmai/tugas_kedua.html">yosepferdianto.github.io/testmai/tugas_kedua.html</a></h4>
+<h4>Check it : <a href="https://yosepferdianto.github.io/portofolio/tugas_kedua.html">yosepferdianto.github.io/portofolio/tugas_kedua.html</a></h4>
 <hr>
 <h3><i>TUGAS KETIGA</i> - ALGORITMA</h3>
 <h4>1. PALINDROME</h4>
@@ -23,7 +23,7 @@ Buatlah sebuah fungsi dengan <b>nama is_palindrom</b> dengan output berupa nilai
 <p>input -> kata <b>level</b> maka outputnya harus <b>True</b>
 <p>input -> kata <b>taat</b> maka outputnya harus <b>True</b>
 <p>Input -> kata <b>halo</b> maka outputnya harus <b>False</b>
-<h4>Check it : <a href="https://yosepferdianto.github.io/testmai/tugas_ketiga_1.html">yosepferdianto.github.io/testmai/tugas_ketiga_1.html</a></h4>
+<h4>Check it : <a href="https://yosepferdianto.github.io/portofolio/tugas_ketiga_1.html">yosepferdianto.github.io/portofolio/tugas_ketiga_1.html</a></h4>
 <h4>2. WORDS COUNT</h4>
 <p>Buatlah sebuah fungsi dengan nama <b>words_count</b> untuk mengitung jumlah kemunculan sebuah kata dalam suatu kalimat, input pertama berupa kalimat dengan tipe data string , input kedua berupa kata yang ingin dihitung jumlah kemunculannya, output berupa data integer,
 <p>misal :
@@ -36,4 +36,4 @@ Buatlah sebuah fungsi dengan nama <b>simple_parser</b> untuk me’replace kata d
 <p>INPUT PERTAMA: `Nama saya {nama}, usia {usia} tahun, saya berprofesi sebagai {profesi}`
 <p>INPUT KEDUA: { nama: ‘Tri Pamungkas’, usia: 30, profesi: ‘database developer’}
 <p>OUTPUT: `Nama saya Tri Pamungkas, usia 30 tahun, saya berprofesi sebagai database developer`
-<h4>Check it : <a href="https://yosepferdianto.github.io/testmai/tugas_ketiga_3.html">yosepferdianto.github.io/testmai/tugas_ketiga_3.html</a></h4>
+<h4>Check it : <a href="https://yosepferdianto.github.io/portofolio/tugas_ketiga_3.html">yosepferdianto.github.io/portofolio/tugas_ketiga_3.html</a></h4>
