@@ -3,7 +3,7 @@
 <br>
 <hr>
 <h3><i>TUGAS PERTAMA</i> - MEMBUAT GITHUB PAGE</h3>
-<h4>Github Page <a href="https://yosepferdianto.github.io/testmai/">yosepferdianto.github.io/testmai</a></h4>
+<h4>Github Page <a href="https://yosepferdianto.github.io/portofolio/">yosepferdianto.github.io/portofolio</a></h4>
 <hr>
 <h3><i>TEST KEDUA</i> - PENGETAHUAN UMUM</h3>
 <p>1. Apa yang kamu ketahui tentang Version Control (usahakan pergunakan wawasan & bahasa endir)
